@@ -1,7 +1,147 @@
-/* strong {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    color: #808cce;
+    
+    background: rgb(236,237,248);
+    background: linear-gradient(180deg, rgba(236,237,248,1) 0%, rgba(253,253,254,1) 80%);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* left side */
+
+section.left {
+    padding: 70px;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrap p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+strong {
     color: #314ffe;
+    font-weight: 400;
 }
 
 h1 {
-    color: #1a237e;
-} */
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #1a237e; 
+}
+
+div.wrap p:nth-of-type(2) {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.btn-action {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffab02;
+    border: 1px solid #ffab02;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-action:hover {
+    background-color: white;
+    color: #ffab02;
+}
+
+/* right side */
+
+section.right {
+    min-width: 600px;
+    padding: 70px;
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.left {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.right {
+    margin-top: 30px;
+    padding-top: 30px;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    border: solid 1px #ddd;
+}
+
+i.fa-city {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #bbdefb;
+    text-align: center;
+    border-radius: 4px;
+    color: #1e88e5;
+    font-size: 18px;
+}
+
+div.left article:nth-child(2) i.fa-city {
+    background-color: #fff9c4;
+    color: #f9a825;
+}
+
+div.right article:nth-child(1) i.fa-city {
+    background-color: #c8e6c9;
+    color: #43a048;
+}
+
+div.right article:nth-child(2) i.fa-city {
+    background-color: #e1bee7;
+    color: #8d25ab;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #1a237e; 
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+article p {
+    margin-top: 20px;
+    line-height: 22px;
+}
