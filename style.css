@@ -21,7 +21,7 @@
 /* left side */
 
 section.left {
-    padding: 70px;
+    padding: 100px;
     flex-basis: 45%;
     display: flex;
     justify-content: center;
@@ -31,6 +31,7 @@ section.left {
 div.wrap p:nth-child(1) {
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 300;
 }
 
 strong {
@@ -39,8 +40,8 @@ strong {
 }
 
 h1 {
-    margin-top: 20px;
-    font-size: 50px;
+    margin-top: 10px;
+    font-size: 60px;
     font-weight: 400;
     color: #1a237e; 
 }
@@ -48,6 +49,7 @@ h1 {
 div.wrap p:nth-of-type(2) {
     margin-top: 20px;
     line-height: 30px;
+    font-size: 20px;
 }
 
 .btn-action {
@@ -72,37 +74,35 @@ div.wrap p:nth-of-type(2) {
 
 section.right {
     min-width: 600px;
-    padding: 70px;
+    padding: 100px;
     flex-basis: 45%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-div.left {
-    margin-bottom: 30px;
-    padding-top: 30px;
+div.right, div.left {
     flex-basis: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
+}
+div.left {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 div.right {
     margin-top: 30px;
-    padding-top: 30px;
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 article {
-    margin: 20px 0;
+    margin-bottom: 30px;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
-    border: solid 1px #ddd;
+    border: solid 1px #e0e0e0;
 }
 
 i.fa-city {
@@ -136,7 +136,7 @@ h2 {
     margin-top: 20px;
     color: #1a237e; 
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
 }
 
@@ -149,35 +149,39 @@ article p {
 
 .shape {
     position: fixed;
-    border-radius: 100% 0 0 0;
-    background: rgb(233,234,247);
-    background: linear-gradient(180deg, rgba(233,234,247,1) 0%, rgba(253,253,254,1) 100%);
     z-index: -1;
 }
 
 .shape.big {
-    bottom: 0;
-    left: -50px;
-    width: 700px;
-    height: 580px;
+    border-radius: 100% 0 0 0;
+    background: rgb(233,234,247);
+    background: linear-gradient(180deg, rgba(233,234,247,1) 0%, rgba(253,253,254,1) 100%);
+    z-index: -1;
+    bottom: -15px;
+    left: -20px;
+    width: 690px;
+    height: 600px;
 }
 
-.shape.mid {
-    top: 0;
+.shape.triangle.mid {
+    top: 0px;
     right: 0px;
-    width: 600px;
-    height: 480px;
-    transform:  translate(55%, -25%) rotate(45deg);
-    background: rgba(233,234,247, 0.6);
-    border-radius: 0 100% 0  0;
+    border-right: 490px solid rgba(233,234,247, 0.8);
+    border-top: 380px solid transparent;
+    border-bottom: 380px solid transparent;
+	margin: 30px auto 0;
+    transform: translate(25%, -50%) rotate(130deg);
 }
 
-.shape.small{
+.shape.triangle.small{
+    width: 0;
+	height: 0;
+	border-top: 180px solid transparent;
+	border-bottom: 180px solid transparent;
+	border-right: 190px solid rgba(233,234,247, 0.6);
+	margin: 30px auto 0;
     top: 50%;
-    right: 300px;
-    transform: translateY(-50%) rotate(132deg);
-    width: 250px;
-    height: 220px;
-    border-radius: 100% 0 0;
-    background: rgba(233,234,247, 0.6);
+    right: 280px;
+    transform: translate(0%, -60%) rotate(135deg); 
 }
+
